@@ -1,7 +1,11 @@
 # GitHub Tutorial
 
-by **Danyal Sarfraz**
-- **All important terms will be bolded**
+by **Danyal Sarfraz**  
+```
+Notes :
+ **All important terms will be bolded
+ **Do not include <'s and >'s in your code, those are meant to display custom inputs
+```
 ---
 ## Git vs. GitHub
 
@@ -44,7 +48,37 @@ Hi <your username>! You've successfully authenticated, but GitHub does not provi
 ---
 ## Repository Setup
 
+##### Now what do I do on GitHub?
 
+Great question! You will now learn to do basic things in your IDE using Git!
+
+##### Making our first repository.
+
+
+**_Git_ your IDE ready for the following commands**: (Haha, anyone get the pun? Sorry I'm not funny.)
+* `cd ~/workspace` (Correct syntax: `cd <your address>`. This will take you into the **directory** `workspace` that is inside the **root**, which here is represented by a `~`. **NEVER** do work in the root folder unless you are a professional and know what you are getting into.)
+* `mkdir my-repo` (Correct syntax: `mkdir <name>`. This will create a directory, in less technical words a folder. Imagine a folder, it is literally what it sounds like. In this folder we will put files or to go with our analogy we will insert papers and documents. But it always doesn't have to be files, we can also put folders into folders, _folderception_.)
+* `cd my-repo` (Correct syntax: `cd <name of folder>`. This will enter you into your directory **my-repo** and will allow you to now make files and folders inside of it.)
+* `git init` (Correct syntax: `git init`. This will **initialize** the directory you are currently in as a repository, specifically a **local repository**. Meaning this will live on your computer and then you are able to push it to a **remote repository** to save and for others to then freely use on GitHub.)
+    * Before we continue we need to make sure our folder "my-repo" was created in the correct place. In your command line make sure it looks like this `<your username here>: ~/workspace/my-repo (master)`.
+    * If your location address does not look similar you have made an error. In order to fix this follow these troubleshooting steps.
+        1. _**ERROR HANDLING**_ : If your address is `~/my-repo` then you should simply type `cd ~` to go into the root. Then proceed by typing `rm -rf my-repo`. `rm -rf foldername`, this command will remove any folder hence "rm". The "-rf" means that anything inside the folder and the folder itself will be removed altogether. If you just use rm it will not proceed with the command due to things inside.
+    * If you don't see (master) at the end of the address then you didn't correctly initialize. Read the following scenario. 
+        2. _**ERROR HANDLING**_ : Let's say for example you forgot to cd into my-repo and now you accidentally initialized a repository in workspace, **how do I fix this?** Simply stay in the area you initialized and type `ls -a`. This command will help us see hidden files, mainly system files. You should see something called `.git`. We will manually remove it, do **NOT** delete workspace. Type `rm -rf .git` to get rid of the .git folder. This will uninitialize your workspace. Now remember to **always cd into the directory you made so you can make changes**.
+            
+##### Adding files to our repository
+
+* `touch my-file.txt` (Correct syntax: `touch <name.ext>`. This will create a text file called "my-file". In the syntax you always required to add the **file extension** type for example .css, .html, .txt, .md etc. This will determine what type of file it is going to produce. A correct use of the command would be `touch website-Layout.css`.)
+* Open my-file.txt and type anything you want!
+* Now make sure your file is **saved**.
+* `git add my-file.txt` (Correct syntax: `git add <filename.ext>`. This will add the file to our **staging area**. The staging area is the place where we add the files we made changes to so we can later save it.)
+* This is a tip, but not required. Periodically type `git status` after adding to see if anything is ready to be commited. This means that if git notices a file that is completely new or changed from its previous iteration it will prompt you to commit it. This make the file name appear red, if it appears green the file is recognized and has had no changes to what has been commited previously.
+* `git commit -m "made a file"` (Correct syntax: `git commit -m "yourmessagehere"`. This will then take whatever is in the staging area or in other words the changes to a file and then applies them to our remote respository on GitHub. If you commit a entirely new file that has never been commited before it will just make a copy of it on the remote. If it's old it will simply overwrite and apply your changes onto the previous file with the same name.)
+* Now it's time to create a remote repository where we can store our files and push from our IDE!
+* Go to [GitHub](github.com).
+* Find this "+" sign and do the [following](click new repo.png)
+
+            
 
 ---
 ## Workflow & Commands
