@@ -76,8 +76,7 @@ Great question! You will now learn to do basic things in your IDE using Git!
 * `git commit -m "made a file"` (Correct syntax: `git commit -m "yourmessagehere"`. This will then take whatever is in the staging area or in other words the changes to a file and then applies them to our remote respository on GitHub. If you commit a entirely new file that has never been commited before it will just make a copy of it on the remote. If it's old it will simply overwrite and apply your changes onto the previous file with the same name.)
 * Now it's time to create a remote repository where we can store our files and push from our IDE!
 * Go to [GitHub](github.com).
-* Find this "+" sign and do the ![following.](images/clicknewrepo.png  
-* 
+* Find this "+" sign and do the ![following.](clicknewrepo.png)  
 
             
 
