@@ -72,13 +72,48 @@ Great question! You will now learn to do basic things in your IDE using Git!
 * Open my-file.txt and type anything you want!
 * Now make sure your file is **saved**.
 * `git add my-file.txt` (Correct syntax: `git add <filename.ext>`. This will add the file to our **staging area**. The staging area is the place where we add the files we made changes to so we can later save it.)
-* This is a tip, but not required. Periodically type `git status` after adding to see if anything is ready to be commited. This means that if git notices a file that is completely new or changed from its previous iteration it will prompt you to commit it. This make the file name appear red, if it appears green the file is recognized and has had no changes to what has been commited previously.
+* This is a tip, but not required. Periodically type `git status` after adding to see if anything is ready to be commited and to see if any file was changed after the last commit. This means that if git notices a file that is completely new or changed from its previous iteration it will prompt you to commit it. This make the file name appear red, if it appears green the file is recognized and has had no changes to what has been commited previously.
 * `git commit -m "made a file"` (Correct syntax: `git commit -m "yourmessagehere"`. This will then take whatever is in the staging area or in other words the changes to a file and then applies them to our remote respository on GitHub. If you commit a entirely new file that has never been commited before it will just make a copy of it on the remote. If it's old it will simply overwrite and apply your changes onto the previous file with the same name.)
 * Now it's time to create a remote repository where we can store our files and push from our IDE!
 * Go to [GitHub](github.com).
-* Find this "+" sign and do the ![following.](clicknewrepo.png)  
-
+* Find this "+" sign and do the following.   
+![clicknewrepo](clicknewrepo.png)  
+* Click New Repository.
+* You will see something like this.     
+![repocreate]()   
+*Copy what the image shows. 
+* The name of your remote **has** to match your local!
+* You will be taken to screen like this.  
+![sshkeysandstuff]()
+* Click ***SSH** on top and then look at where it says **"...or push an existing repository from the command line"** . Copy and paste each line of code in that box **seperately** into your command line and enter each one **seperately**.
+* After that is done go back to your GitHub and open the repository you made and _voila!_ Your changes are now on the website!
+* _**Success!**_   Now practice adding, commiting and pushing!
             
 
 ---
 ## Workflow & Commands
+
+Workflow is key for coders. If you don't have a smooth workflow you will for sure encounter confusion. Make it easy on yourself.
+
+In our workflow we should be repeating status, add, status, commit, push. We do this because we want to make sure our workflow is well thought out and is organized so we encounter the minimum amount of confusion of what is appropiate to do next.
+
+This workflow consists of 6 steps that are easy to learn:
+1. `git init`
+2. (edit your files)
+3. `git status`
+4. `git add file.ext`
+5. `git status`
+6. `git commit -m "message"`
+7. `git push`
+
+**Repeat numbers 2 to 6** 
+
+We first do `git init` to initialize the area of our work flow. Then we proceed to add files to edit. Then we add things to our file, for example code for a video game or just basic instructions on how to play it. After we do our edits we should then type `git status` to check on our files and make sure that our changes are noticed by git. Once we have made sufficient enough edits we will then proceed to add it to our staging area by using `git add .`. Adding all the files we made changes to. Now we use `git status` once again as it is a part of our efficient work cycle. Once we see green text showing all the files we have added we can then safely go ahead and commit our changes. By using `git commit -m "message"` we are ensuring that our git is compiling all our changes and is ready to send them up to the cloud onto GitHub. Once we have commited we can now use `git push` to then send these off to our remote repository.
+
+ 
+
+
+
+
+
+
