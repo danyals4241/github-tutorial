@@ -78,16 +78,16 @@ Great question! You will now learn to do basic things in your IDE using Git!
 * Go to [GitHub](github.com).
 * Find this "+" sign.  
 ![plssign](plussign.png)  
----  
+* Click it  
 ![clicknewrepo](clicknewrepo.png)  
 * Click New Repository.
 * You will see something like this.     
-![repocreate](makerepo.png)   
-*Copy what the image shows. 
+![repocreate](makerepo.png)     
+* Copy what the image shows. 
 * The name of your remote **has** to match your local!
 * You will be taken to screen like this.  
 ![sshkeysandstuff](sshkey.png)
-* Click ***SSH** on top and then look at where it says **"...or push an existing repository from the command line"** . Copy and paste each line of code in that box **seperately** into your command line and enter each one **seperately**.
+* Click **SSH** on top and then look at where it says **"...or push an existing repository from the command line"** . Copy and paste each line of code in that box **seperately** into your command line and enter each one **seperately**.
 * After that is done go back to your GitHub and open the repository you made and _voila!_ Your changes are now on the website!
 * _**Success!**_   Now practice adding, commiting and pushing!
             
