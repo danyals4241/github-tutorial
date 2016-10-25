@@ -85,6 +85,8 @@ Great question! You will now learn to do basic things in your IDE using Git!
 ![repocreate](makerepo.png)     
 * Copy what the image shows. 
 * The name of your remote **has** to match your local!
+* Create your repository!   
+![clickit](createrepo.png)
 * You will be taken to screen like this.  
 ![sshkeysandstuff](sshkey.png)
 * Click **SSH** on top and then look at where it says **"...or push an existing repository from the command line"** . Copy and paste each line of code in that box **seperately** into your command line and enter each one **seperately**.
