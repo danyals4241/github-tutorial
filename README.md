@@ -101,7 +101,7 @@ Workflow is key for coders. If you don't have a smooth workflow you will for sur
 
 In our workflow we should be repeating status, add, status, commit, push. We do this because we want to make sure our workflow is well thought out and is organized so we encounter the minimum amount of confusion of what is appropiate to do next.
 
-This workflow consists of 6 steps that are easy to learn:
+This workflow consists of 6 steps that are easy to learn:  
 1. `git init`  
 2. (edit your files)  
 3. `git status`  
@@ -113,11 +113,3 @@ This workflow consists of 6 steps that are easy to learn:
 **Repeat numbers 2 to 7** 
 
 We first do `git init` to initialize the area of our work flow. Then we proceed to add files to edit. Then we add things to our file, for example code for a video game or just basic instructions on how to play it. After we do our edits we should then type `git status` to check on our files and make sure that our changes are noticed by git. Once we have made sufficient enough edits we will then proceed to add it to our staging area by using `git add .`. Adding all the files we made changes to. Now we use `git status` once again as it is a part of our efficient work cycle. Once we see green text showing all the files we have added we can then safely go ahead and commit our changes. By using `git commit -m "message"` we are ensuring that our git is compiling all our changes and is ready to send them up to the cloud onto GitHub. Once we have commited we can now use `git push` to then send these off to our remote repository. This type of workflow is very efficient and useful because we will always know what do after every important change we make to our files. This won't leave one in confusion, _"Wait, what do I do now?"_.
-
- 
-
-
-
-
-
-
