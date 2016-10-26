@@ -1,11 +1,10 @@
 # GitHub Tutorial
 
 by **Danyal Sarfraz**  
-```
-Notes :
- **All important terms will be bolded
- **Do not include <'s and >'s in your code, those are meant to display custom inputs
-```
+>Notes :  
+ *All important terms will be bolded  
+ *Do not include <'s and >'s in your code, those are meant to display custom inputs
+
 ---
 ## Git vs. GitHub
 

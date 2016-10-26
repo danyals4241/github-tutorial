@@ -58,7 +58,25 @@ _NOTE: for each command, you should explain:_
 ### A note about plagiarism
 You should be typing _every single word_.  It is ok to refer to your notes, the slides, the internet, and even your classmates for help.  However, **intellectual property is to be regarded highly in this class**.  You should be explaining everything in your own words.  If you are copying/pasting, you are not learning.
 
+
+
 ### Final thoughts
 The best way to learn something is through repeated practice.  
 Feel free to **practice** all of these concepts on your own to understand them better.  
 Don't forget to use [Google](http://www.google.com) if you get stuck!
+
+``` 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    create repo.png
+        modified:   directions.md
+git status
+git add createrepo.png
+git add README.md
+git commit -m "final fixes to tutorial, fixed structure prob and added image"
+git push
+```
