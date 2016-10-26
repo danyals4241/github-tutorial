@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GitHub Tutorial by danyals4241</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>GitHub Tutorial</h1>
+        <p>Become a Scholar</p>
+        <p class="view"><a href="https://github.com/danyals4241/github-tutorial">View the Project on GitHub <small>danyals4241/github-tutorial</small></a></p>
+        <ul>
+          <li><a href="https://github.com/danyals4241/github-tutorial/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/danyals4241/github-tutorial/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/danyals4241/github-tutorial">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p>by <strong>Danyal Sarfraz</strong>  </p>
+
+<pre><code>Notes :
+ **All important terms will be bolded
+ **Do not include &lt;'s and &gt;'s in your code, those are meant to display custom inputs
+</code></pre>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<h5>
+<a id="what-is-git" class="anchor" href="#what-is-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Git?</h5>
+
+<p>Git is a software that runs in the command line which lets you <strong>save and control your files</strong>. In more technological terms you can call it a <strong>DVCS</strong> (<em><strong>Distributed Version Control System</strong></em>).</p>
+
+<h5>
+<a id="what-is-github" class="anchor" href="#what-is-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is GitHub?</h5>
+
+<p>GitHub utilizes Git to <strong>push ones changes to the cloud</strong> to make sure they are <strong>somewhere safe and accessible anywhere in the world</strong>. This allows for <strong>filesharing</strong> across the globe. Making doing your projects easier if you are on the move constantly. You can call it a <strong>"hub"</strong> for <strong>"git"</strong>. It's a <strong>server for multimedia sharing</strong>.</p>
+
+<h5>
+<a id="so-what-is-the-difference" class="anchor" href="#so-what-is-the-difference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So what is the difference?</h5>
+
+<p>Git is the software that <strong>provides bases and mechanisms to share content and save it</strong>, however GitHub is what utilizes that software to make it work. An easy way to know the difference is that GitHub is a "hub" for "git" to work on. Basically meaning GitHub is a server.</p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h5>
+<a id="how-do-i-start-working-on-git" class="anchor" href="#how-do-i-start-working-on-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How do I start working on Git?</h5>
+
+<p>Before we create an account on <a href="github.com">GitHub</a> we need to first setup our <strong>IDE</strong> or Integrated Development Environment.</p>
+
+<ul>
+<li><strong>Make sure your IDE is acceptable to be used and provides a SSH key. This will be helpful further on in the tutorial. A good IDE to use would be Cloud9. For further information visit their <a href="c9.io">website</a>. Here is a helpful <a href="https://docs.c9.io/docs/setting-up-github-workspace">link</a> if you are interested.</strong></li>
+</ul>
+
+<p>Once you have made sure you have an IDE that is compatible with GitHub proceed with these following steps:</p>
+
+<ul>
+<li>Go to <a href="github.com">GitHub</a>.</li>
+<li>Click the Sign Up button.</li>
+<li>Enter all required information in Step 1. </li>
+<li>Once you are at Step 2 make sure you choose the free plan. You can choose the paid plan but for now for the sake of this tutorial we will keep with the free one.</li>
+<li>In Step 3 it is up to you to do the survey, you can skip it if you want.</li>
+<li>Now verify your email and we can continue with your IDE.</li>
+<li><strong>Make sure you research how to use GitHub. There are many resources online!</strong></li>
+</ul>
+
+<p>Now it's time to link our GitHub to our IDE.</p>
+
+<ul>
+<li>Retrieve your SSH key, normally you would find it in a SSH keys tab. Google if you are having problems finding it!</li>
+<li>Copy the key and go to GitHub. <strong>github &gt; top-right &gt; profile icon &gt; settings
+left sidebar &gt; SSH keys</strong>
+</li>
+<li>Paste it and add SSH key, before you add it make sure it starts with ssh-rsa. <em>Make sure you copy it correctly</em>.</li>
+<li>Return to your IDE, paste <code>ssh -T git@github.com</code> and press enter. You will be greeted by something like this </li>
+</ul>
+
+<pre><code>Hi &lt;your username&gt;! You've successfully authenticated, but GitHub does not provide shell access._
+</code></pre>
+
+<ul>
+<li>Now you're <em>done!</em>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h5>
+<a id="now-what-do-i-do-on-github" class="anchor" href="#now-what-do-i-do-on-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now what do I do on GitHub?</h5>
+
+<p>Great question! You will now learn to do basic things in your IDE using Git!</p>
+
+<h5>
+<a id="making-our-first-repository" class="anchor" href="#making-our-first-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making our first repository.</h5>
+
+<p><strong><em>Git</em> your IDE ready for the following commands</strong>: (Haha, anyone get the pun? Sorry I'm not funny.)</p>
+
+<ul>
+<li>
+<code>cd ~/workspace</code> (Correct syntax: <code>cd &lt;your address&gt;</code>. This will take you into the <strong>directory</strong> <code>workspace</code> that is inside the <strong>root</strong>, which here is represented by a <code>~</code>. <strong>NEVER</strong> do work in the root folder unless you are a professional and know what you are getting into.)</li>
+<li>
+<code>mkdir my-repo</code> (Correct syntax: <code>mkdir &lt;name&gt;</code>. This will create a directory, in less technical words a folder. Imagine a folder, it is literally what it sounds like. In this folder we will put files or to go with our analogy we will insert papers and documents. But it always doesn't have to be files, we can also put folders into folders, <em>folderception</em>.)</li>
+<li>
+<code>cd my-repo</code> (Correct syntax: <code>cd &lt;name of folder&gt;</code>. This will enter you into your directory <strong>my-repo</strong> and will allow you to now make files and folders inside of it.)</li>
+<li>
+<code>git init</code> (Correct syntax: <code>git init</code>. This will <strong>initialize</strong> the directory you are currently in as a repository, specifically a <strong>local repository</strong>. Meaning this will live on your computer and then you are able to push it to a <strong>remote repository</strong> to save and for others to then freely use on GitHub.)
+
+<ul>
+<li>Before we continue we need to make sure our folder "my-repo" was created in the correct place. In your command line make sure it looks like this <code>&lt;your username here&gt;: ~/workspace/my-repo (master)</code>.</li>
+<li>If your location address does not look similar you have made an error. In order to fix this follow these troubleshooting steps.
+
+<ol>
+<li>
+<em><strong>ERROR HANDLING</strong></em> : If your address is <code>~/my-repo</code> then you should simply type <code>cd ~</code> to go into the root. Then proceed by typing <code>rm -rf my-repo</code>. <code>rm -rf foldername</code>, this command will remove any folder hence "rm". The "-rf" means that anything inside the folder and the folder itself will be removed altogether. If you just use rm it will not proceed with the command due to things inside.</li>
+</ol>
+</li>
+<li>If you don't see (master) at the end of the address then you didn't correctly initialize. Read the following scenario. 
+
+<ol>
+<li>
+<em><strong>ERROR HANDLING</strong></em> : Let's say for example you forgot to cd into my-repo and now you accidentally initialized a repository in workspace, <strong>how do I fix this?</strong> Simply stay in the area you initialized and type <code>ls -a</code>. This command will help us see hidden files, mainly system files. You should see something called <code>.git</code>. We will manually remove it, do <strong>NOT</strong> delete workspace. Type <code>rm -rf .git</code> to get rid of the .git folder. This will uninitialize your workspace. Now remember to <strong>always cd into the directory you made so you can make changes</strong>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+
+<h5>
+<a id="adding-files-to-our-repository" class="anchor" href="#adding-files-to-our-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding files to our repository</h5>
+
+<ul>
+<li>
+<code>touch my-file.txt</code> (Correct syntax: <code>touch &lt;name.ext&gt;</code>. This will create a text file called "my-file". In the syntax you always required to add the <strong>file extension</strong> type for example .css, .html, .txt, .md etc. This will determine what type of file it is going to produce. A correct use of the command would be <code>touch website-Layout.css</code>.)</li>
+<li>Open my-file.txt and type anything you want!</li>
+<li>Now make sure your file is <strong>saved</strong>.</li>
+<li>
+<code>git add my-file.txt</code> (Correct syntax: <code>git add &lt;filename.ext&gt;</code>. This will add the file to our <strong>staging area</strong>. The staging area is the place where we add the files we made changes to so we can later save it.)</li>
+<li>This is a tip, but not required. Periodically type <code>git status</code> after adding to see if anything is ready to be commited and to see if any file was changed after the last commit. This means that if git notices a file that is completely new or changed from its previous iteration it will prompt you to commit it. This make the file name appear red, if it appears green the file is recognized and has had no changes to what has been commited previously.</li>
+<li>
+<code>git commit -m "made a file"</code> (Correct syntax: <code>git commit -m "yourmessagehere"</code>. This will then take whatever is in the staging area or in other words the changes to a file and then applies them to our remote respository on GitHub. If you commit a entirely new file that has never been commited before it will just make a copy of it on the remote. If it's old it will simply overwrite and apply your changes onto the previous file with the same name.)</li>
+<li>Now it's time to create a remote repository where we can store our files and push from our IDE!</li>
+<li>Go to <a href="github.com">GitHub</a>.</li>
+<li>Find this "+" sign.<br>
+<img src="plussign.png" alt="plssign"><br>
+</li>
+<li>Click it<br>
+<img src="clicknewrepo.png" alt="clicknewrepo"><br>
+</li>
+<li>Click New Repository.</li>
+<li>You will see something like this.<br>
+<img src="makerepo.png" alt="repocreate"><br>
+</li>
+<li>Copy what the image shows. </li>
+<li>The name of your remote <strong>has</strong> to match your local!</li>
+<li>Create your repository!<br>
+<img src="createrepo.png" alt="clickit">
+</li>
+<li>You will be taken to screen like this.<br>
+<img src="sshkey.png" alt="sshkeysandstuff">
+</li>
+<li>Click <strong>SSH</strong> on top and then look at where it says <strong>"...or push an existing repository from the command line"</strong> . Copy and paste each line of code in that box <strong>seperately</strong> into your command line and enter each one <strong>seperately</strong>.</li>
+<li>After that is done go back to your GitHub and open the repository you made and <em>voila!</em> Your changes are now on the website!</li>
+<li>
+<em><strong>Success!</strong></em>   Now practice adding, commiting and pushing!</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>Workflow is key for coders. If you don't have a smooth workflow you will for sure encounter confusion. Make it easy on yourself.</p>
+
+<p>In our workflow we should be repeating status, add, status, commit, push. We do this because we want to make sure our workflow is well thought out and is organized so we encounter the minimum amount of confusion of what is appropiate to do next.</p>
+
+<p>This workflow consists of 6 steps that are easy to learn:<br>
+1. <code>git init</code><br>
+2. (edit your files)<br>
+3. <code>git status</code><br>
+4. <code>git add file.ext</code><br>
+5. <code>git status</code><br>
+6. <code>git commit -m "message"</code><br>
+7. <code>git push</code>  </p>
+
+<p><strong>Repeat numbers 2 to 7</strong> </p>
+
+<p>We first do <code>git init</code> to initialize the area of our work flow. Then we proceed to add files to edit. Then we add things to our file, for example code for a video game or just basic instructions on how to play it. After we do our edits we should then type <code>git status</code> to check on our files and make sure that our changes are noticed by git. Once we have made sufficient enough edits we will then proceed to add it to our staging area by using <code>git add .</code>. Adding all the files we made changes to. Now we use <code>git status</code> once again as it is a part of our efficient work cycle. Once we see green text showing all the files we have added we can then safely go ahead and commit our changes. By using <code>git commit -m "message"</code> we are ensuring that our git is compiling all our changes and is ready to send them up to the cloud onto GitHub. Once we have commited we can now use <code>git push</code> to then send these off to our remote repository. This type of workflow is very efficient and useful because we will always know what do after every important change we make to our files. This won't leave one in confusion, <em>"Wait, what do I do now?"</em>.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/danyals4241">danyals4241</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
